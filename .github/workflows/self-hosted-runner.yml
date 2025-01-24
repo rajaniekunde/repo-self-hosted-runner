@@ -1,0 +1,13 @@
+name: Self-Hosted Runner Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-on-self-hosted:
+    runs-on: self-hosted
+    steps:
+      - name: Print Runner Info
+        run: echo "Running on a self-hosted runner!"
